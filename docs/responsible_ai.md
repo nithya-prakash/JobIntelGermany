@@ -13,7 +13,7 @@ That boundary matters. Using this tool to filter, evaluate, or rank applicants o
 
 | Area | Observed behavior | Evidence and limit |
 | --- | --- | --- |
-| Scope and score | Candidate-side CLI; interpretable precision, coverage, and harmonic overlap components; output says it is not hiring probability or suitability. | `src/german_job_market/matching.py:167-191,218-245`; no human-judged relevance benchmark (`data/evaluation/matching/README.md`). |
+| Scope and score | Candidate-side CLI; interpretable precision, coverage, and harmonic overlap components; output says it is not hiring probability or suitability. | `src/german_job_market/matching.py:167-191,218-245`; no human-judged relevance benchmark (`data/evaluation/matching/phase log.md`). |
 | Candidate input | Structured skill IDs avoid candidate text. A local UTF-8 CV is read, parsed in memory, then the local result is printed; no persistence is implemented by this command. | `src/german_job_market/matching_cli.py:37-45,58-84`. This is not a whole-system retention or endpoint security guarantee. |
 | Posting text | Email and German phone-pattern redaction is applied by source normalization. | `src/german_job_market/normalization.py:15-16,47-55`. Pattern redaction can miss other identifiers and is not anonymization. |
 | Data schema | Posting schema has job and organization fields, but no explicit demographic attributes. | `src/german_job_market/schema.py:14-37`. Lack of explicit sensitive fields does not remove proxy-bias risk. |
