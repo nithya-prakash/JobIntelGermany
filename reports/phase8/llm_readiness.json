@@ -1,0 +1,90 @@
+{
+  "phase": 8,
+  "audit_type": "llm_finetuning_readiness",
+  "generated_at_utc": "2026-10-04T20:10:36.452309+00:00",
+  "inputs": {
+    "gold_path": "skill_gold_v1.jsonl",
+    "weak_labels_path": "job_skills.parquet",
+    "baseline_path": "extraction_baseline.json"
+  },
+  "decision": "blocked_no_finetuning",
+  "gold_labels": {
+    "file_found": true,
+    "records": 17,
+    "positive_skill_labels": 128,
+    "language_record_counts": {
+      "de": 8,
+      "en": 9
+    },
+    "annotation_status": "agent-assisted; not independently or double coded"
+  },
+  "weak_label_overlap": {
+    "file_found": true,
+    "rows": 342058,
+    "distinct_job_ids": 342058,
+    "gold_job_ids_present": 17
+  },
+  "runtime": {
+    "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "torch": false,
+      "transformers": false,
+      "peft": false,
+      "trl": false,
+      "bitsandbytes": false
+    }
+  },
+  "baseline": {
+    "task": "bilingual_rule_based_skill_extraction_evaluation",
+    "sample_size": 17,
+    "language_record_counts": {
+      "de": 8,
+      "en": 9
+    },
+    "overall": {
+      "true_positive": 127,
+      "false_positive": 1,
+      "false_negative": 1,
+      "gold_count": 128,
+      "predicted_count": 128,
+      "precision": 0.9921875,
+      "recall": 0.9921875,
+      "f1": 0.9921875
+    },
+    "by_primary_language": {
+      "de": {
+        "true_positive": 56,
+        "false_positive": 0,
+        "false_negative": 1,
+        "gold_count": 57,
+        "predicted_count": 56,
+        "precision": 1.0,
+        "recall": 0.9824561403508771,
+        "f1": 0.9911504424778761
+      },
+      "en": {
+        "true_positive": 71,
+        "false_positive": 1,
+        "false_negative": 0,
+        "gold_count": 71,
+        "predicted_count": 72,
+        "precision": 0.9861111111111112,
+        "recall": 1.0,
+        "f1": 0.993006993006993
+      }
+    },
+    "annotation_limit": "Small curated sample; labels require independent human review before external performance claims."
+  },
+  "train_validation_test_split": null,
+  "fine_tuned_model": {
+    "trained": false,
+    "metrics": null
+  },
+  "blockers": [
+    "the 17-posting challenge sample does not support a credible held-out comparison",
+    "gold annotations have not been independently reviewed",
+    "no pre-registered train/validation/test split exists",
+    "curated evaluation postings overlap the weak-label sidecar; using it for training leaks evaluation examples",
+    "fine-tuning runtime packages are missing: torch, transformers, peft, trl, bitsandbytes"
+  ]
+}

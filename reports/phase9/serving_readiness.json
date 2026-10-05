@@ -1,0 +1,34 @@
+{
+  "phase": 9,
+  "audit_type": "llm_serving_and_quantization_readiness",
+  "generated_at_utc": "2026-10-04T20:43:49.251322+00:00",
+  "decision": "blocked_no_benchmark",
+  "inputs": {
+    "phase8_report_path": "llm_readiness.json",
+    "model_path": "models/finetuned-skill-extractor"
+  },
+  "phase8_model": {
+    "trained": false,
+    "metrics": null
+  },
+  "model_artifact": {
+    "exists": false
+  },
+  "runtime": {
+    "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "vllm": false,
+      "mlx": false,
+      "mlx_lm": false,
+      "llmcompressor": false
+    }
+  },
+  "benchmark_results": null,
+  "blockers": [
+    "Phase 8 did not produce a fine-tuned model artifact",
+    "no selected model artifact exists at models/finetuned-skill-extractor",
+    "vLLM is not installed",
+    "Apple Silicon serving requires the separate MLX/vLLM-Metal runtime, which is absent",
+    "no compatible model serving runtime is available"
+  ]
+}

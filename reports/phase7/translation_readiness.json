@@ -1,0 +1,28 @@
+{
+  "phase": 7,
+  "audit_type": "translation_evaluation_pair_readiness",
+  "generated_at_utc": "2026-10-04T19:55:09.831465+00:00",
+  "inputs": {
+    "pairs_path": "pairs.jsonl",
+    "sha256": null
+  },
+  "status": "not_evaluable",
+  "pairs": {
+    "file_found": false,
+    "records_read": 0,
+    "blank_lines": 0,
+    "valid_records": 0,
+    "invalid_records": 0,
+    "duplicate_segment_ids": 0,
+    "direction_counts": {
+      "de-en": 0,
+      "en-de": 0
+    },
+    "invalid_reasons": {}
+  },
+  "evaluation": {
+    "model_run": false,
+    "metrics": null,
+    "reason": "no valid aligned source, independent reference, and model hypothesis records are available"
+  }
+}

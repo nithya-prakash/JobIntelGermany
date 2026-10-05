@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "german-job-market-intelligence"
+license = "MIT"
+version = "0.1.0"
+description = "Reproducible job-market data foundation and German-English skill baseline."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.2",
+  "ijson>=3.3",
+  "pydantic>=2.10",
+  "pyarrow>=19",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.15",
+  "pytest>=8.3",
+  "ruff>=0.11",
+]
+
+[project.scripts]
+gjmi = "german_job_market.cli:main"
+gjmi-skills = "german_job_market.skills_cli:main"
+gjmi-report = "german_job_market.reporting_cli:main"
+gjmi-embed = "german_job_market.skill_embeddings_cli:main"
+gjmi-match = "german_job_market.matching_cli:main"
+gjmi-salary = "german_job_market.salary_cli:main"
+gjmi-translate = "german_job_market.translation_cli:main"
+gjmi-llm = "german_job_market.llm_readiness_cli:main"
+gjmi-serve = "german_job_market.serving_readiness_cli:main"
+gjmi-eval = "german_job_market.benchmark_cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/german_job_market"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+plugins = ["pydantic.mypy"]
+ignore_missing_imports = true

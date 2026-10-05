@@ -1,0 +1,28 @@
+{
+  "taxonomy_version": "0.2.2",
+  "note": "Extractor vs adjudicated v2 gold; 'required' counts only labels marked required (257 of 287 pairs), 'all' includes mentioned.",
+  "all": {
+    "dev": {
+      "P": 0.941,
+      "R": 0.714,
+      "F1": 0.812
+    },
+    "test": {
+      "P": 0.949,
+      "R": 0.64,
+      "F1": 0.765
+    }
+  },
+  "required_only": {
+    "dev": {
+      "P": 0.871,
+      "R": 0.74,
+      "F1": 0.8
+    },
+    "test": {
+      "P": 0.847,
+      "R": 0.637,
+      "F1": 0.727
+    }
+  }
+}

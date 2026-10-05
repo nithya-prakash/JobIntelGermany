@@ -1,0 +1,13 @@
+{
+  "note": "Per-split pilot; 15 queries each, below the 20-query scorer minimum; single judge; synthetic skill-list queries.",
+  "dev": {
+    "queries": 15,
+    "precision_at_10": 0.893,
+    "mrr": 0.933
+  },
+  "test": {
+    "queries": 15,
+    "precision_at_10": 0.813,
+    "mrr": 0.967
+  }
+}

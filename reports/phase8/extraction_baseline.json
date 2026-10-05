@@ -1,0 +1,222 @@
+{
+  "phase": 2,
+  "task": "bilingual_rule_based_skill_extraction_evaluation",
+  "generated_at_utc": "2026-10-04T20:03:43.786113+00:00",
+  "taxonomy_version": "0.1.0",
+  "taxonomy_sha256": "9841c6b1f2e2e4b9daf007e82206819b1c2eaae0f09ba0e397684ddf5083e943",
+  "input_sha256": "a0af14d6cc9d97209928b016f32319b018f82949854ce462576e32f1a1248fed",
+  "gold_sha256": "abb0c4c16b89816a5e38bb2f6f726cb3a0986084db4fca390b3c271c1ebca5d4",
+  "evaluation_unit": "posting-skill pair; one positive per skill per posting",
+  "sample_size": 17,
+  "language_record_counts": {
+    "de": 8,
+    "en": 9
+  },
+  "overall": {
+    "true_positive": 127,
+    "false_positive": 1,
+    "false_negative": 1,
+    "gold_count": 128,
+    "predicted_count": 128,
+    "precision": 0.9921875,
+    "recall": 0.9921875,
+    "f1": 0.9921875
+  },
+  "false_positive_pairs": [
+    {
+      "job_id": "00973af76cc24f9224028b3d",
+      "skill_id": "communication"
+    }
+  ],
+  "false_negative_pairs": [
+    {
+      "job_id": "00d7ac5a764fd996aa879c45",
+      "skill_id": "nlp"
+    }
+  ],
+  "by_category": {
+    "cloud": {
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 9,
+      "predicted_count": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "data_engineering": {
+      "true_positive": 6,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 6,
+      "predicted_count": 6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "database": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 2,
+      "predicted_count": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "database_query_language": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 3,
+      "predicted_count": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "developer_tool": {
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 5,
+      "predicted_count": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "devops": {
+      "true_positive": 22,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 22,
+      "predicted_count": 22,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "enterprise_software": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 1,
+      "predicted_count": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "framework": {
+      "true_positive": 10,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 10,
+      "predicted_count": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "machine_learning_ai": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 1,
+      "gold_count": 4,
+      "predicted_count": 3,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    "methodology": {
+      "true_positive": 11,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 11,
+      "predicted_count": 11,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "operating_system": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 3,
+      "predicted_count": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "programming_language": {
+      "true_positive": 22,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 22,
+      "predicted_count": 22,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "runtime": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 1,
+      "predicted_count": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "soft_skill": {
+      "true_positive": 19,
+      "false_positive": 1,
+      "false_negative": 0,
+      "gold_count": 19,
+      "predicted_count": 20,
+      "precision": 0.95,
+      "recall": 1.0,
+      "f1": 0.9743589743589743
+    },
+    "software_architecture": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 2,
+      "predicted_count": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "web_technology": {
+      "true_positive": 8,
+      "false_positive": 0,
+      "false_negative": 0,
+      "gold_count": 8,
+      "predicted_count": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "by_primary_language": {
+    "de": {
+      "true_positive": 56,
+      "false_positive": 0,
+      "false_negative": 1,
+      "gold_count": 57,
+      "predicted_count": 56,
+      "precision": 1.0,
+      "recall": 0.9824561403508771,
+      "f1": 0.9911504424778761
+    },
+    "en": {
+      "true_positive": 71,
+      "false_positive": 1,
+      "false_negative": 0,
+      "gold_count": 71,
+      "predicted_count": 72,
+      "precision": 0.9861111111111112,
+      "recall": 1.0,
+      "f1": 0.993006993006993
+    }
+  },
+  "annotation_limit": "Small curated sample; labels require independent human review before external performance claims."
+}

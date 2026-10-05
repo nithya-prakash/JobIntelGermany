@@ -1,0 +1,188 @@
+{
+  "generated_at_utc": "2026-10-04T11:32:05.180845+00:00",
+  "source": {
+    "dataset_id": "wnt24rfrwz",
+    "version": 2,
+    "doi": "10.17632/wnt24rfrwz.2",
+    "title": "Scraping German Online Job Advertisements to Analyse AI Skill Demand",
+    "license": "CC BY 4.0",
+    "publisher": "Mendeley Data",
+    "creator": "Matthias Kapa",
+    "source_url": "https://data.mendeley.com/datasets/wnt24rfrwz/2",
+    "download_url": "https://data.mendeley.com/public-api/zip/{dataset_id}/download/{version}",
+    "publisher_described_collection_period": "May 2023 through June 2023"
+  },
+  "input_archive": {
+    "filename": "stepstone-v2.zip",
+    "bytes": 324758596,
+    "sha256": "505d0a3e6e5d23a118ae19297e5e6d02289d83fa876c914659758be6998fd32f"
+  },
+  "ingestion": {
+    "records_read": 342452,
+    "valid_before_deduplication": 342452,
+    "invalid_records": 0,
+    "duplicates_dropped": 394,
+    "output_records": 342058,
+    "rejected_reasons": {},
+    "pii_redactions": {
+      "emails": 0,
+      "phone_numbers": 4408
+    },
+    "field_non_null": {
+      "collection_date": 342058,
+      "company": 315307,
+      "description": 342055,
+      "job_id": 342058,
+      "location": 339422,
+      "source": 342058,
+      "source_url": 342058,
+      "title": 342058
+    },
+    "semantic_sha256": "326a196e3ea0bc867b4ccf8ebebdfb61dcececd290869acc905b473a255432e2"
+  },
+  "quality_checks": {
+    "rows": 342058,
+    "schema_fields": [
+      "job_id",
+      "source",
+      "source_url",
+      "title",
+      "company",
+      "location",
+      "federal_state",
+      "remote_type",
+      "employment_type",
+      "experience_level",
+      "salary_min",
+      "salary_max",
+      "salary_currency",
+      "salary_period",
+      "description",
+      "requirements",
+      "responsibilities",
+      "benefits",
+      "language_requirements",
+      "extracted_skills",
+      "normalized_skills",
+      "embedding",
+      "publication_date",
+      "collection_date"
+    ],
+    "field_coverage": {
+      "job_id": {
+        "non_null": 342058,
+        "fraction": 1.0
+      },
+      "source": {
+        "non_null": 342058,
+        "fraction": 1.0
+      },
+      "source_url": {
+        "non_null": 342058,
+        "fraction": 1.0
+      },
+      "title": {
+        "non_null": 342058,
+        "fraction": 1.0
+      },
+      "company": {
+        "non_null": 315307,
+        "fraction": 0.9217939647662092
+      },
+      "location": {
+        "non_null": 339422,
+        "fraction": 0.9922937045764169
+      },
+      "federal_state": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "remote_type": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "employment_type": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "experience_level": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "salary_min": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "salary_max": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "salary_currency": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "salary_period": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "description": {
+        "non_null": 342055,
+        "fraction": 0.9999912295575604
+      },
+      "requirements": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "responsibilities": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "benefits": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "language_requirements": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "extracted_skills": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "normalized_skills": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "embedding": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "publication_date": {
+        "non_null": 0,
+        "fraction": 0.0
+      },
+      "collection_date": {
+        "non_null": 342058,
+        "fraction": 1.0
+      }
+    },
+    "remaining_email_pattern_rows": 0,
+    "remaining_phone_pattern_rows": 0,
+    "collection_date_min": "2023-04-04",
+    "collection_date_max": "2023-07-23",
+    "parquet_sha256": "a0af14d6cc9d97209928b016f32319b018f82949854ce462576e32f1a1248fed"
+  },
+  "privacy": {
+    "email_matches_redacted": 0,
+    "phone_matches_redacted": 4408,
+    "remaining_email_pattern_rows": 0,
+    "remaining_phone_pattern_rows": 0,
+    "raw_source_record_retained": false,
+    "unrecognized_source_fields_retained": false
+  },
+  "outputs": {
+    "parquet": "data/processed/jobs.parquet",
+    "duckdb": "data/processed/jobs.duckdb",
+    "duckdb_view": "jobs"
+  }
+}

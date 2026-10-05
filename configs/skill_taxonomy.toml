@@ -1,0 +1,383 @@
+version = "0.2.2"
+description = "Curated bilingual seed taxonomy for named skills in German and English job ads."
+
+exclusions = ["communication protocols", "communication protocol", "marketing communications", "communication bus", "communication interfaces"]
+
+[[skills]]
+id = "python"
+label = "Python"
+category = "programming_language"
+aliases = ["Python", "Python programming", "Python-Kenntnisse"]
+
+[[skills]]
+id = "java"
+label = "Java"
+category = "programming_language"
+aliases = ["Java", "Java programming"]
+
+[[skills]]
+id = "javascript"
+label = "JavaScript"
+category = "programming_language"
+aliases = ["JavaScript", "Javascript", "Java Script"]
+
+[[skills]]
+id = "typescript"
+label = "TypeScript"
+category = "programming_language"
+aliases = ["TypeScript", "Typescript"]
+
+[[skills]]
+id = "csharp"
+label = "C#"
+category = "programming_language"
+aliases = ["C#", "C sharp", "C-sharp"]
+
+[[skills]]
+id = "cpp"
+label = "C++"
+category = "programming_language"
+aliases = ["C++", "C plus plus"]
+
+[[skills]]
+id = "php"
+label = "PHP"
+category = "programming_language"
+aliases = ["PHP"]
+
+[[skills]]
+id = "kotlin"
+label = "Kotlin"
+category = "programming_language"
+aliases = ["Kotlin"]
+
+[[skills]]
+id = "scala"
+label = "Scala"
+category = "programming_language"
+aliases = ["Scala"]
+
+[[skills]]
+id = "sql"
+label = "SQL"
+category = "database_query_language"
+aliases = ["SQL", "Structured Query Language"]
+
+[[skills]]
+id = "postgresql"
+label = "PostgreSQL"
+category = "database"
+aliases = ["PostgreSQL", "Postgres"]
+
+[[skills]]
+id = "mysql"
+label = "MySQL"
+category = "database"
+aliases = ["MySQL"]
+
+[[skills]]
+id = "mongodb"
+label = "MongoDB"
+category = "database"
+aliases = ["MongoDB"]
+
+[[skills]]
+id = "oracle_database"
+label = "Oracle Database"
+category = "database"
+aliases = ["Oracle Database", "Oracle DB"]
+
+[[skills]]
+id = "sap"
+label = "SAP"
+category = "enterprise_software"
+aliases = ["SAP", "SAP S/4HANA", "SAP HANA"]
+
+[[skills]]
+id = "react"
+label = "React"
+category = "framework"
+aliases = ["React", "React.js", "ReactJS", "React js"]
+
+[[skills]]
+id = "angular"
+label = "Angular"
+category = "framework"
+aliases = ["Angular", "AngularJS", "Angular JS"]
+
+[[skills]]
+id = "vue"
+label = "Vue.js"
+category = "framework"
+aliases = ["Vue.js", "VueJS", "Vue JS", "Vue"]
+
+[[skills]]
+id = "nodejs"
+label = "Node.js"
+category = "runtime"
+aliases = ["Node.js", "NodeJS", "Node JS"]
+
+[[skills]]
+id = "spring"
+label = "Spring Framework"
+category = "framework"
+aliases = ["Spring Framework", "Spring Boot", "Spring"]
+
+[[skills]]
+id = "dotnet"
+label = ".NET"
+category = "framework"
+aliases = [".NET", "ASP.NET", ".NET Framework"]
+
+[[skills]]
+id = "django"
+label = "Django"
+category = "framework"
+aliases = ["Django"]
+
+[[skills]]
+id = "flask"
+label = "Flask"
+category = "framework"
+aliases = ["Flask"]
+
+[[skills]]
+id = "aws"
+label = "Amazon Web Services"
+category = "cloud"
+aliases = ["AWS", "Amazon Web Services"]
+
+[[skills]]
+id = "azure"
+label = "Microsoft Azure"
+category = "cloud"
+aliases = ["Azure", "Microsoft Azure", "Azure Dev Ops"]
+
+[[skills]]
+id = "gcp"
+label = "Google Cloud Platform"
+category = "cloud"
+aliases = ["GCP", "Google Cloud Platform", "Google Cloud"]
+
+[[skills]]
+id = "docker"
+label = "Docker"
+category = "devops"
+aliases = ["Docker"]
+
+[[skills]]
+id = "kubernetes"
+label = "Kubernetes"
+category = "devops"
+aliases = ["Kubernetes", "K8s"]
+
+[[skills]]
+id = "git"
+label = "Git"
+category = "devops"
+aliases = ["Git"]
+
+[[skills]]
+id = "jenkins"
+label = "Jenkins"
+category = "devops"
+aliases = ["Jenkins"]
+
+[[skills]]
+id = "terraform"
+label = "Terraform"
+category = "devops"
+aliases = ["Terraform"]
+
+[[skills]]
+id = "linux"
+label = "Linux"
+category = "operating_system"
+aliases = ["Linux"]
+
+[[skills]]
+id = "cicd"
+label = "CI/CD"
+category = "devops"
+aliases = ["CI/CD", "CI CD", "continuous integration", "continuous delivery"]
+
+[[skills]]
+id = "machine_learning"
+label = "Machine Learning"
+category = "machine_learning_ai"
+aliases = ["machine learning", "maschinelles Lernen", "maschinellem Lernen", "ML"]
+
+[[skills]]
+id = "deep_learning"
+label = "Deep Learning"
+category = "machine_learning_ai"
+aliases = ["deep learning", "Deep-Learning"]
+
+[[skills]]
+id = "artificial_intelligence"
+label = "Artificial Intelligence"
+category = "machine_learning_ai"
+aliases = ["artificial intelligence", "AI", "Künstliche Intelligenz", "KI"]
+
+[[skills]]
+id = "tensorflow"
+label = "TensorFlow"
+category = "machine_learning_ai"
+aliases = ["TensorFlow"]
+
+[[skills]]
+id = "pytorch"
+label = "PyTorch"
+category = "machine_learning_ai"
+aliases = ["PyTorch"]
+
+[[skills]]
+id = "scikit_learn"
+label = "scikit-learn"
+category = "machine_learning_ai"
+aliases = ["scikit-learn", "scikit learn", "sklearn"]
+
+[[skills]]
+id = "pandas"
+label = "pandas"
+category = "machine_learning_ai"
+aliases = ["pandas"]
+
+[[skills]]
+id = "numpy"
+label = "NumPy"
+category = "machine_learning_ai"
+aliases = ["NumPy"]
+
+[[skills]]
+id = "spark"
+label = "Apache Spark"
+category = "data_engineering"
+aliases = ["Apache Spark", "Spark", "PySpark"]
+
+[[skills]]
+id = "agile"
+label = "Agile"
+category = "methodology"
+aliases = ["Agile", "agile Methoden", "agile methods"]
+
+[[skills]]
+id = "scrum"
+label = "Scrum"
+category = "methodology"
+aliases = ["Scrum"]
+
+[[skills]]
+id = "communication"
+label = "Communication"
+category = "soft_skill"
+aliases = ["communication skills", "communication", "Kommunikationsfähigkeit", "Kommunikationsstärke", "Kommunikationskompetenz", "Kommunikationsvermögen", "Kommunikationstalent", "communicative", "kommunikativ", "kommunikative"]
+
+[[skills]]
+id = "teamwork"
+label = "Teamwork"
+category = "soft_skill"
+aliases = ["teamwork", "team player", "Teamfähigkeit", "Teamarbeit", "Teamplayer", "team-oriented", "teamorientiert", "Teamorientierung"]
+
+[[skills]]
+id = "analytical_thinking"
+label = "Analytical Thinking"
+category = "soft_skill"
+aliases = ["analytical thinking", "analytisches Denken", "analytische Fähigkeiten", "analytically", "analytical skills", "analytische Denkweise", "analytisches Denkvermögen", "analytische Kompetenz"]
+
+[[skills]]
+id = "problem_solving"
+label = "Problem Solving"
+category = "soft_skill"
+aliases = ["problem solving", "problem-solving", "Problemlösungskompetenz", "Problemlösungsfähigkeit", "Problemlösungsfähigkeiten", "Problemlösung", "problem solver"]
+
+[[skills]]
+id = "html"
+label = "HTML"
+category = "web_technology"
+aliases = ["HTML", "HTML5"]
+
+[[skills]]
+id = "css"
+label = "CSS"
+category = "web_technology"
+aliases = ["CSS", "CSS3"]
+
+[[skills]]
+id = "nlp"
+label = "Natural Language Processing"
+category = "machine_learning_ai"
+aliases = ["NLP", "Natural Language Processing"]
+
+[[skills]]
+id = "airflow"
+label = "Apache Airflow"
+category = "data_engineering"
+aliases = ["Apache Airflow", "Airflow"]
+
+[[skills]]
+id = "snowflake"
+label = "Snowflake"
+category = "database"
+aliases = ["Snowflake"]
+
+[[skills]]
+id = "helm"
+label = "Helm"
+category = "devops"
+aliases = ["Helm"]
+
+[[skills]]
+id = "github"
+label = "GitHub"
+category = "developer_tool"
+aliases = ["GitHub Actions", "Git Hub Actions", "GitHub", "Git Hub"]
+
+[[skills]]
+id = "gitlab"
+label = "GitLab"
+category = "developer_tool"
+aliases = ["GitLab CI", "Git Lab CI", "GitLab", "Git Lab"]
+
+[[skills]]
+id = "databricks"
+label = "Databricks"
+category = "data_engineering"
+aliases = ["Databricks"]
+
+[[skills]]
+id = "hadoop"
+label = "Apache Hadoop"
+category = "data_engineering"
+aliases = ["Apache Hadoop", "Hadoop"]
+
+[[skills]]
+id = "rest_api"
+label = "REST API"
+category = "software_architecture"
+aliases = ["REST API", "RESTful API", "REST"]
+case_sensitive_aliases = ["REST"]
+
+[[skills]]
+id = "wpf"
+label = "Windows Presentation Foundation"
+category = "framework"
+aliases = ["WPF", "Windows Presentation Foundation"]
+
+[[skills]]
+id = "openshift"
+label = "OpenShift"
+category = "devops"
+aliases = ["OpenShift"]
+
+[[skills]]
+id = "jira"
+label = "Jira"
+category = "developer_tool"
+aliases = ["Jira", "JIRA"]
+
+[[skills]]
+id = "uml"
+label = "UML"
+category = "software_architecture"
+aliases = ["UML"]

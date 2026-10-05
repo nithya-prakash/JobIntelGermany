@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+
+# Downloaded source data and generated analytical outputs are not committed.
+/data/raw/
+/data/processed/
+
+# Never publish: OS files, scratch dirs, databases, local reading packs and annotation pages.
+.DS_Store
+/work/
+/outputs/
+*.duckdb
+*.parquet
+*.zip

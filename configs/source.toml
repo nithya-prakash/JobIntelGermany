@@ -1,0 +1,11 @@
+dataset_id = "wnt24rfrwz"
+version = 2
+doi = "10.17632/wnt24rfrwz.2"
+title = "Scraping German Online Job Advertisements to Analyse AI Skill Demand"
+license = "CC BY 4.0"
+publisher = "Mendeley Data"
+creator = "Matthias Kapa"
+source_url = "https://data.mendeley.com/datasets/wnt24rfrwz/2"
+download_url = "https://data.mendeley.com/public-api/zip/{dataset_id}/download/{version}"
+publisher_described_collection_period = "May 2023 through June 2023"
+

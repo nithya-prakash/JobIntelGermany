@@ -1,0 +1,1982 @@
+{
+  "phase": 3,
+  "report_type": "historical_collection_cohorts",
+  "generated_at_utc": "2026-10-04T17:14:36.497577+00:00",
+  "publisher_described_collection_period": "May 2023 through June 2023",
+  "temporal_basis": "collection_date (source field date_scrape)",
+  "market_growth_inference_allowed": false,
+  "trend_interpretation": "Weekly values and share deltas describe this dataset's collection cohorts only. They are not estimates of weekly vacancy demand or current German labor-market trends.",
+  "inputs": {
+    "jobs_path": "data/processed/jobs.parquet",
+    "jobs_sha256": "a0af14d6cc9d97209928b016f32319b018f82949854ce462576e32f1a1248fed",
+    "skills_path": "data/processed/job_skills.parquet",
+    "skills_sha256": "05a9716ce969dbd759cfc6a608fc1b7965d42e651295b8b25970da2960b7c1b0",
+    "taxonomy_version": "0.1.0",
+    "taxonomy_sha256": "9841c6b1f2e2e4b9daf007e82206819b1c2eaae0f09ba0e397684ddf5083e943",
+    "taxonomy_size": 63
+  },
+  "summary": {
+    "postings": 342058,
+    "postings_with_collection_dates": 342058,
+    "postings_with_skill_matches": 179607,
+    "skill_assignments": 295664,
+    "collection_date_min": "2023-04-04",
+    "collection_date_max": "2023-07-23",
+    "observed_weeks": 11,
+    "calendar_weeks": 16,
+    "missing_weeks": 5,
+    "min_weekly_postings": 360,
+    "max_weekly_postings": 98769,
+    "max_to_min_weekly_volume_ratio": 274.36,
+    "unique_skills_observed": 63,
+    "top_skills_by_posting_count": [
+      {
+        "skill_id": "teamwork",
+        "label": "Teamwork",
+        "postings": 81898,
+        "share_of_all_postings_pct": 23.9427
+      },
+      {
+        "skill_id": "communication",
+        "label": "Communication",
+        "postings": 64872,
+        "share_of_all_postings_pct": 18.9652
+      },
+      {
+        "skill_id": "sap",
+        "label": "SAP",
+        "postings": 38405,
+        "share_of_all_postings_pct": 11.2276
+      },
+      {
+        "skill_id": "analytical_thinking",
+        "label": "Analytical Thinking",
+        "postings": 13164,
+        "share_of_all_postings_pct": 3.8485
+      },
+      {
+        "skill_id": "agile",
+        "label": "Agile",
+        "postings": 8998,
+        "share_of_all_postings_pct": 2.6305
+      },
+      {
+        "skill_id": "sql",
+        "label": "SQL",
+        "postings": 7071,
+        "share_of_all_postings_pct": 2.0672
+      },
+      {
+        "skill_id": "python",
+        "label": "Python",
+        "postings": 6285,
+        "share_of_all_postings_pct": 1.8374
+      },
+      {
+        "skill_id": "artificial_intelligence",
+        "label": "Artificial Intelligence",
+        "postings": 5261,
+        "share_of_all_postings_pct": 1.538
+      },
+      {
+        "skill_id": "java",
+        "label": "Java",
+        "postings": 5118,
+        "share_of_all_postings_pct": 1.4962
+      },
+      {
+        "skill_id": "problem_solving",
+        "label": "Problem Solving",
+        "postings": 4786,
+        "share_of_all_postings_pct": 1.3992
+      },
+      {
+        "skill_id": "scrum",
+        "label": "Scrum",
+        "postings": 4749,
+        "share_of_all_postings_pct": 1.3884
+      },
+      {
+        "skill_id": "linux",
+        "label": "Linux",
+        "postings": 4748,
+        "share_of_all_postings_pct": 1.3881
+      },
+      {
+        "skill_id": "azure",
+        "label": "Microsoft Azure",
+        "postings": 3866,
+        "share_of_all_postings_pct": 1.1302
+      },
+      {
+        "skill_id": "cpp",
+        "label": "C++",
+        "postings": 3654,
+        "share_of_all_postings_pct": 1.0682
+      },
+      {
+        "skill_id": "jira",
+        "label": "Jira",
+        "postings": 3423,
+        "share_of_all_postings_pct": 1.0007
+      },
+      {
+        "skill_id": "cicd",
+        "label": "CI/CD",
+        "postings": 2922,
+        "share_of_all_postings_pct": 0.8542
+      },
+      {
+        "skill_id": "javascript",
+        "label": "JavaScript",
+        "postings": 2814,
+        "share_of_all_postings_pct": 0.8227
+      },
+      {
+        "skill_id": "csharp",
+        "label": "C#",
+        "postings": 2737,
+        "share_of_all_postings_pct": 0.8002
+      },
+      {
+        "skill_id": "git",
+        "label": "Git",
+        "postings": 2469,
+        "share_of_all_postings_pct": 0.7218
+      },
+      {
+        "skill_id": "html",
+        "label": "HTML",
+        "postings": 2421,
+        "share_of_all_postings_pct": 0.7078
+      }
+    ]
+  },
+  "field_coverage": {
+    "collection_date": {
+      "count": 342058,
+      "total": 342058
+    },
+    "publication_date": {
+      "count": 0,
+      "total": 342058
+    },
+    "federal_state": {
+      "count": 0,
+      "total": 342058
+    },
+    "remote_type": {
+      "count": 0,
+      "total": 342058
+    },
+    "salary_min": {
+      "count": 0,
+      "total": 342058
+    },
+    "salary_max": {
+      "count": 0,
+      "total": 342058
+    },
+    "language_requirements": {
+      "count": 0,
+      "total": 342058
+    },
+    "location": {
+      "count": 339422,
+      "total": 342058
+    }
+  },
+  "sidecar_integrity": {
+    "jobs_rows": 342058,
+    "skill_rows": 342058,
+    "orphan_skill_rows": 0,
+    "jobs_without_skill_rows": 0,
+    "duplicate_job_ids": 0,
+    "duplicate_skill_rows": 0,
+    "unknown_skill_ids": []
+  },
+  "missing_week_starts": [
+    "2023-04-24",
+    "2023-05-08",
+    "2023-05-15",
+    "2023-05-22",
+    "2023-05-29"
+  ],
+  "weeks": [
+    {
+      "week_start": "2023-04-03",
+      "has_observations": true,
+      "postings": 98769,
+      "skill_assignments": 85489,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 22831,
+          "share_pct": 23.1156
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 17913,
+          "share_pct": 18.1363
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 10241,
+          "share_pct": 10.3686
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 3630,
+          "share_pct": 3.6752
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 2604,
+          "share_pct": 2.6365
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 2121,
+          "share_pct": 2.1474
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 1974,
+          "share_pct": 1.9986
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 1697,
+          "share_pct": 1.7182
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "postings": 1530,
+          "share_pct": 1.5491
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 1459,
+          "share_pct": 1.4772
+        }
+      ],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-04-10",
+      "has_observations": true,
+      "postings": 22893,
+      "skill_assignments": 19817,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 5432,
+          "share_pct": 23.7278
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 4226,
+          "share_pct": 18.4598
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 2606,
+          "share_pct": 11.3834
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 892,
+          "share_pct": 3.8964
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 598,
+          "share_pct": 2.6122
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 501,
+          "share_pct": 2.1884
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 433,
+          "share_pct": 1.8914
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 350,
+          "share_pct": 1.5289
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "postings": 334,
+          "share_pct": 1.459
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 313,
+          "share_pct": 1.3672
+        }
+      ],
+      "compared_with_week": "2023-04-03",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 2606,
+          "previous_postings": 10241,
+          "current_share_pct": 11.3834,
+          "previous_share_pct": 10.3686,
+          "share_delta_percentage_points": 1.0148
+        },
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 5432,
+          "previous_postings": 22831,
+          "current_share_pct": 23.7278,
+          "previous_share_pct": 23.1156,
+          "share_delta_percentage_points": 0.6122
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 4226,
+          "previous_postings": 17913,
+          "current_share_pct": 18.4598,
+          "previous_share_pct": 18.1363,
+          "share_delta_percentage_points": 0.3235
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 892,
+          "previous_postings": 3630,
+          "current_share_pct": 3.8964,
+          "previous_share_pct": 3.6752,
+          "share_delta_percentage_points": 0.2211
+        },
+        {
+          "skill_id": "jira",
+          "label": "Jira",
+          "current_postings": 268,
+          "previous_postings": 971,
+          "current_share_pct": 1.1707,
+          "previous_share_pct": 0.9831,
+          "share_delta_percentage_points": 0.1876
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "cpp",
+          "label": "C++",
+          "current_postings": 245,
+          "previous_postings": 1338,
+          "current_share_pct": 1.0702,
+          "previous_share_pct": 1.3547,
+          "share_delta_percentage_points": -0.2845
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 350,
+          "previous_postings": 1697,
+          "current_share_pct": 1.5289,
+          "previous_share_pct": 1.7182,
+          "share_delta_percentage_points": -0.1893
+        },
+        {
+          "skill_id": "html",
+          "label": "HTML",
+          "current_postings": 147,
+          "previous_postings": 788,
+          "current_share_pct": 0.6421,
+          "previous_share_pct": 0.7978,
+          "share_delta_percentage_points": -0.1557
+        },
+        {
+          "skill_id": "javascript",
+          "label": "JavaScript",
+          "current_postings": 194,
+          "previous_postings": 970,
+          "current_share_pct": 0.8474,
+          "previous_share_pct": 0.9821,
+          "share_delta_percentage_points": -0.1347
+        },
+        {
+          "skill_id": "aws",
+          "label": "Amazon Web Services",
+          "current_postings": 125,
+          "previous_postings": 656,
+          "current_share_pct": 0.546,
+          "previous_share_pct": 0.6642,
+          "share_delta_percentage_points": -0.1182
+        }
+      ]
+    },
+    {
+      "week_start": "2023-04-17",
+      "has_observations": true,
+      "postings": 28885,
+      "skill_assignments": 25468,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 7040,
+          "share_pct": 24.3725
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 7014,
+          "share_pct": 24.2825
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 3090,
+          "share_pct": 10.6976
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 1030,
+          "share_pct": 3.5659
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 685,
+          "share_pct": 2.3715
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 509,
+          "share_pct": 1.7622
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 452,
+          "share_pct": 1.5648
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 452,
+          "share_pct": 1.5648
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "postings": 403,
+          "share_pct": 1.3952
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 388,
+          "share_pct": 1.3433
+        }
+      ],
+      "compared_with_week": "2023-04-10",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 7014,
+          "previous_postings": 4226,
+          "current_share_pct": 24.2825,
+          "previous_share_pct": 18.4598,
+          "share_delta_percentage_points": 5.8227
+        },
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 7040,
+          "previous_postings": 5432,
+          "current_share_pct": 24.3725,
+          "previous_share_pct": 23.7278,
+          "share_delta_percentage_points": 0.6447
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "current_postings": 452,
+          "previous_postings": 313,
+          "current_share_pct": 1.5648,
+          "previous_share_pct": 1.3672,
+          "share_delta_percentage_points": 0.1976
+        },
+        {
+          "skill_id": "uml",
+          "label": "UML",
+          "current_postings": 60,
+          "previous_postings": 32,
+          "current_share_pct": 0.2077,
+          "previous_share_pct": 0.1398,
+          "share_delta_percentage_points": 0.0679
+        },
+        {
+          "skill_id": "gcp",
+          "label": "Google Cloud Platform",
+          "current_postings": 73,
+          "previous_postings": 51,
+          "current_share_pct": 0.2527,
+          "previous_share_pct": 0.2228,
+          "share_delta_percentage_points": 0.03
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 3090,
+          "previous_postings": 2606,
+          "current_share_pct": 10.6976,
+          "previous_share_pct": 11.3834,
+          "share_delta_percentage_points": -0.6858
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 509,
+          "previous_postings": 501,
+          "current_share_pct": 1.7622,
+          "previous_share_pct": 2.1884,
+          "share_delta_percentage_points": -0.4263
+        },
+        {
+          "skill_id": "azure",
+          "label": "Microsoft Azure",
+          "current_postings": 272,
+          "previous_postings": 298,
+          "current_share_pct": 0.9417,
+          "previous_share_pct": 1.3017,
+          "share_delta_percentage_points": -0.36
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 1030,
+          "previous_postings": 892,
+          "current_share_pct": 3.5659,
+          "previous_share_pct": 3.8964,
+          "share_delta_percentage_points": -0.3305
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "current_postings": 452,
+          "previous_postings": 433,
+          "current_share_pct": 1.5648,
+          "previous_share_pct": 1.8914,
+          "share_delta_percentage_points": -0.3266
+        }
+      ]
+    },
+    {
+      "week_start": "2023-04-24",
+      "has_observations": false,
+      "postings": 0,
+      "skill_assignments": 0,
+      "top_skills": [],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-05-01",
+      "has_observations": true,
+      "postings": 26675,
+      "skill_assignments": 23581,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 6547,
+          "share_pct": 24.5436
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 5183,
+          "share_pct": 19.4302
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 3225,
+          "share_pct": 12.09
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 1025,
+          "share_pct": 3.8425
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 731,
+          "share_pct": 2.7404
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 549,
+          "share_pct": 2.0581
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 483,
+          "share_pct": 1.8107
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 429,
+          "share_pct": 1.6082
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "postings": 400,
+          "share_pct": 1.4995
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 381,
+          "share_pct": 1.4283
+        }
+      ],
+      "compared_with_week": "2023-04-17",
+      "calendar_weeks_since_comparison": 2,
+      "largest_share_increases": [
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 3225,
+          "previous_postings": 3090,
+          "current_share_pct": 12.09,
+          "previous_share_pct": 10.6976,
+          "share_delta_percentage_points": 1.3924
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "current_postings": 731,
+          "previous_postings": 685,
+          "current_share_pct": 2.7404,
+          "previous_share_pct": 2.3715,
+          "share_delta_percentage_points": 0.3689
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 549,
+          "previous_postings": 509,
+          "current_share_pct": 2.0581,
+          "previous_share_pct": 1.7622,
+          "share_delta_percentage_points": 0.2959
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 1025,
+          "previous_postings": 1030,
+          "current_share_pct": 3.8425,
+          "previous_share_pct": 3.5659,
+          "share_delta_percentage_points": 0.2767
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "current_postings": 483,
+          "previous_postings": 452,
+          "current_share_pct": 1.8107,
+          "previous_share_pct": 1.5648,
+          "share_delta_percentage_points": 0.2459
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 5183,
+          "previous_postings": 7014,
+          "current_share_pct": 19.4302,
+          "previous_share_pct": 24.2825,
+          "share_delta_percentage_points": -4.8523
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "current_postings": 323,
+          "previous_postings": 375,
+          "current_share_pct": 1.2109,
+          "previous_share_pct": 1.2983,
+          "share_delta_percentage_points": -0.0874
+        },
+        {
+          "skill_id": "uml",
+          "label": "UML",
+          "current_postings": 44,
+          "previous_postings": 60,
+          "current_share_pct": 0.1649,
+          "previous_share_pct": 0.2077,
+          "share_delta_percentage_points": -0.0428
+        },
+        {
+          "skill_id": "spring",
+          "label": "Spring Framework",
+          "current_postings": 97,
+          "previous_postings": 116,
+          "current_share_pct": 0.3636,
+          "previous_share_pct": 0.4016,
+          "share_delta_percentage_points": -0.038
+        },
+        {
+          "skill_id": "wpf",
+          "label": "Windows Presentation Foundation",
+          "current_postings": 12,
+          "previous_postings": 22,
+          "current_share_pct": 0.045,
+          "previous_share_pct": 0.0762,
+          "share_delta_percentage_points": -0.0312
+        }
+      ]
+    },
+    {
+      "week_start": "2023-05-08",
+      "has_observations": false,
+      "postings": 0,
+      "skill_assignments": 0,
+      "top_skills": [],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-05-15",
+      "has_observations": false,
+      "postings": 0,
+      "skill_assignments": 0,
+      "top_skills": [],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-05-22",
+      "has_observations": false,
+      "postings": 0,
+      "skill_assignments": 0,
+      "top_skills": [],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-05-29",
+      "has_observations": false,
+      "postings": 0,
+      "skill_assignments": 0,
+      "top_skills": [],
+      "compared_with_week": null,
+      "calendar_weeks_since_comparison": null,
+      "largest_share_increases": [],
+      "largest_share_decreases": []
+    },
+    {
+      "week_start": "2023-06-05",
+      "has_observations": true,
+      "postings": 66432,
+      "skill_assignments": 57278,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 16050,
+          "share_pct": 24.16
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 12285,
+          "share_pct": 18.4926
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 7747,
+          "share_pct": 11.6615
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 2627,
+          "share_pct": 3.9544
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 1776,
+          "share_pct": 2.6734
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 1414,
+          "share_pct": 2.1285
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 1219,
+          "share_pct": 1.835
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 1016,
+          "share_pct": 1.5294
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 970,
+          "share_pct": 1.4601
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 946,
+          "share_pct": 1.424
+        }
+      ],
+      "compared_with_week": "2023-05-01",
+      "calendar_weeks_since_comparison": 5,
+      "largest_share_increases": [
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "current_postings": 946,
+          "previous_postings": 323,
+          "current_share_pct": 1.424,
+          "previous_share_pct": 1.2109,
+          "share_delta_percentage_points": 0.2131
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 2627,
+          "previous_postings": 1025,
+          "current_share_pct": 3.9544,
+          "previous_share_pct": 3.8425,
+          "share_delta_percentage_points": 0.1119
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 1414,
+          "previous_postings": 549,
+          "current_share_pct": 2.1285,
+          "previous_share_pct": 2.0581,
+          "share_delta_percentage_points": 0.0704
+        },
+        {
+          "skill_id": "terraform",
+          "label": "Terraform",
+          "current_postings": 150,
+          "previous_postings": 46,
+          "current_share_pct": 0.2258,
+          "previous_share_pct": 0.1724,
+          "share_delta_percentage_points": 0.0533
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 970,
+          "previous_postings": 376,
+          "current_share_pct": 1.4601,
+          "previous_share_pct": 1.4096,
+          "share_delta_percentage_points": 0.0506
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 12285,
+          "previous_postings": 5183,
+          "current_share_pct": 18.4926,
+          "previous_share_pct": 19.4302,
+          "share_delta_percentage_points": -0.9376
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 7747,
+          "previous_postings": 3225,
+          "current_share_pct": 11.6615,
+          "previous_share_pct": 12.09,
+          "share_delta_percentage_points": -0.4284
+        },
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 16050,
+          "previous_postings": 6547,
+          "current_share_pct": 24.16,
+          "previous_share_pct": 24.5436,
+          "share_delta_percentage_points": -0.3835
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "current_postings": 870,
+          "previous_postings": 400,
+          "current_share_pct": 1.3096,
+          "previous_share_pct": 1.4995,
+          "share_delta_percentage_points": -0.1899
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "current_postings": 883,
+          "previous_postings": 381,
+          "current_share_pct": 1.3292,
+          "previous_share_pct": 1.4283,
+          "share_delta_percentage_points": -0.0991
+        }
+      ]
+    },
+    {
+      "week_start": "2023-06-12",
+      "has_observations": true,
+      "postings": 360,
+      "skill_assignments": 290,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 90,
+          "share_pct": 25.0
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 76,
+          "share_pct": 21.1111
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 35,
+          "share_pct": 9.7222
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 16,
+          "share_pct": 4.4444
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 15,
+          "share_pct": 4.1667
+        },
+        {
+          "skill_id": "cpp",
+          "label": "C++",
+          "postings": 9,
+          "share_pct": 2.5
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 8,
+          "share_pct": 2.2222
+        },
+        {
+          "skill_id": "jira",
+          "label": "Jira",
+          "postings": 6,
+          "share_pct": 1.6667
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 6,
+          "share_pct": 1.6667
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 4,
+          "share_pct": 1.1111
+        }
+      ],
+      "compared_with_week": "2023-06-05",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 76,
+          "previous_postings": 12285,
+          "current_share_pct": 21.1111,
+          "previous_share_pct": 18.4926,
+          "share_delta_percentage_points": 2.6185
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "current_postings": 16,
+          "previous_postings": 1219,
+          "current_share_pct": 4.4444,
+          "previous_share_pct": 1.835,
+          "share_delta_percentage_points": 2.6095
+        },
+        {
+          "skill_id": "cpp",
+          "label": "C++",
+          "current_postings": 9,
+          "previous_postings": 659,
+          "current_share_pct": 2.5,
+          "previous_share_pct": 0.992,
+          "share_delta_percentage_points": 1.508
+        },
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 90,
+          "previous_postings": 16050,
+          "current_share_pct": 25.0,
+          "previous_share_pct": 24.16,
+          "share_delta_percentage_points": 0.84
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "current_postings": 8,
+          "previous_postings": 1016,
+          "current_share_pct": 2.2222,
+          "previous_share_pct": 1.5294,
+          "share_delta_percentage_points": 0.6928
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 35,
+          "previous_postings": 7747,
+          "current_share_pct": 9.7222,
+          "previous_share_pct": 11.6615,
+          "share_delta_percentage_points": -1.9393
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "current_postings": 3,
+          "previous_postings": 1776,
+          "current_share_pct": 0.8333,
+          "previous_share_pct": 2.6734,
+          "share_delta_percentage_points": -1.8401
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 3,
+          "previous_postings": 1414,
+          "current_share_pct": 0.8333,
+          "previous_share_pct": 2.1285,
+          "share_delta_percentage_points": -1.2952
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "current_postings": 1,
+          "previous_postings": 870,
+          "current_share_pct": 0.2778,
+          "previous_share_pct": 1.3096,
+          "share_delta_percentage_points": -1.0318
+        },
+        {
+          "skill_id": "azure",
+          "label": "Microsoft Azure",
+          "current_postings": 1,
+          "previous_postings": 733,
+          "current_share_pct": 0.2778,
+          "previous_share_pct": 1.1034,
+          "share_delta_percentage_points": -0.8256
+        }
+      ]
+    },
+    {
+      "week_start": "2023-06-19",
+      "has_observations": true,
+      "postings": 29849,
+      "skill_assignments": 24402,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 7402,
+          "share_pct": 24.7982
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 5561,
+          "share_pct": 18.6304
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 3458,
+          "share_pct": 11.585
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 1133,
+          "share_pct": 3.7958
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 687,
+          "share_pct": 2.3016
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 518,
+          "share_pct": 1.7354
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 470,
+          "share_pct": 1.5746
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 453,
+          "share_pct": 1.5176
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 448,
+          "share_pct": 1.5009
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 375,
+          "share_pct": 1.2563
+        }
+      ],
+      "compared_with_week": "2023-06-12",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 3458,
+          "previous_postings": 35,
+          "current_share_pct": 11.585,
+          "previous_share_pct": 9.7222,
+          "share_delta_percentage_points": 1.8628
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "current_postings": 687,
+          "previous_postings": 3,
+          "current_share_pct": 2.3016,
+          "previous_share_pct": 0.8333,
+          "share_delta_percentage_points": 1.4683
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 518,
+          "previous_postings": 3,
+          "current_share_pct": 1.7354,
+          "previous_share_pct": 0.8333,
+          "share_delta_percentage_points": 0.9021
+        },
+        {
+          "skill_id": "scrum",
+          "label": "Scrum",
+          "current_postings": 344,
+          "previous_postings": 1,
+          "current_share_pct": 1.1525,
+          "previous_share_pct": 0.2778,
+          "share_delta_percentage_points": 0.8747
+        },
+        {
+          "skill_id": "azure",
+          "label": "Microsoft Azure",
+          "current_postings": 276,
+          "previous_postings": 1,
+          "current_share_pct": 0.9247,
+          "previous_share_pct": 0.2778,
+          "share_delta_percentage_points": 0.6469
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "current_postings": 470,
+          "previous_postings": 16,
+          "current_share_pct": 1.5746,
+          "previous_share_pct": 4.4444,
+          "share_delta_percentage_points": -2.8699
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 5561,
+          "previous_postings": 76,
+          "current_share_pct": 18.6304,
+          "previous_share_pct": 21.1111,
+          "share_delta_percentage_points": -2.4807
+        },
+        {
+          "skill_id": "cpp",
+          "label": "C++",
+          "current_postings": 218,
+          "previous_postings": 9,
+          "current_share_pct": 0.7303,
+          "previous_share_pct": 2.5,
+          "share_delta_percentage_points": -1.7697
+        },
+        {
+          "skill_id": "jira",
+          "label": "Jira",
+          "current_postings": 285,
+          "previous_postings": 6,
+          "current_share_pct": 0.9548,
+          "previous_share_pct": 1.6667,
+          "share_delta_percentage_points": -0.7119
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "current_postings": 453,
+          "previous_postings": 8,
+          "current_share_pct": 1.5176,
+          "previous_share_pct": 2.2222,
+          "share_delta_percentage_points": -0.7046
+        }
+      ]
+    },
+    {
+      "week_start": "2023-06-26",
+      "has_observations": true,
+      "postings": 4387,
+      "skill_assignments": 4592,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 1069,
+          "share_pct": 24.3674
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 881,
+          "share_pct": 20.0821
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 520,
+          "share_pct": 11.8532
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 209,
+          "share_pct": 4.7641
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 163,
+          "share_pct": 3.7155
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 149,
+          "share_pct": 3.3964
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 119,
+          "share_pct": 2.7126
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 116,
+          "share_pct": 2.6442
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 82,
+          "share_pct": 1.8692
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 82,
+          "share_pct": 1.8692
+        }
+      ],
+      "compared_with_week": "2023-06-19",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 149,
+          "previous_postings": 518,
+          "current_share_pct": 3.3964,
+          "previous_share_pct": 1.7354,
+          "share_delta_percentage_points": 1.661
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 119,
+          "previous_postings": 326,
+          "current_share_pct": 2.7126,
+          "previous_share_pct": 1.0922,
+          "share_delta_percentage_points": 1.6204
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 881,
+          "previous_postings": 5561,
+          "current_share_pct": 20.0821,
+          "previous_share_pct": 18.6304,
+          "share_delta_percentage_points": 1.4516
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "current_postings": 163,
+          "previous_postings": 687,
+          "current_share_pct": 3.7155,
+          "previous_share_pct": 2.3016,
+          "share_delta_percentage_points": 1.4139
+        },
+        {
+          "skill_id": "cicd",
+          "label": "CI/CD",
+          "current_postings": 73,
+          "previous_postings": 171,
+          "current_share_pct": 1.664,
+          "previous_share_pct": 0.5729,
+          "share_delta_percentage_points": 1.0911
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 1069,
+          "previous_postings": 7402,
+          "current_share_pct": 24.3674,
+          "previous_share_pct": 24.7982,
+          "share_delta_percentage_points": -0.4307
+        },
+        {
+          "skill_id": "postgresql",
+          "label": "PostgreSQL",
+          "current_postings": 1,
+          "previous_postings": 14,
+          "current_share_pct": 0.0228,
+          "previous_share_pct": 0.0469,
+          "share_delta_percentage_points": -0.0241
+        },
+        {
+          "skill_id": "tensorflow",
+          "label": "TensorFlow",
+          "current_postings": 0,
+          "previous_postings": 7,
+          "current_share_pct": 0.0,
+          "previous_share_pct": 0.0235,
+          "share_delta_percentage_points": -0.0235
+        },
+        {
+          "skill_id": "scala",
+          "label": "Scala",
+          "current_postings": 1,
+          "previous_postings": 13,
+          "current_share_pct": 0.0228,
+          "previous_share_pct": 0.0436,
+          "share_delta_percentage_points": -0.0208
+        },
+        {
+          "skill_id": "uml",
+          "label": "UML",
+          "current_postings": 6,
+          "previous_postings": 46,
+          "current_share_pct": 0.1368,
+          "previous_share_pct": 0.1541,
+          "share_delta_percentage_points": -0.0173
+        }
+      ]
+    },
+    {
+      "week_start": "2023-07-03",
+      "has_observations": true,
+      "postings": 28569,
+      "skill_assignments": 24220,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 6925,
+          "share_pct": 24.2396
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 5259,
+          "share_pct": 18.4081
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 3303,
+          "share_pct": 11.5615
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 1167,
+          "share_pct": 4.0848
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 812,
+          "share_pct": 2.8422
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 578,
+          "share_pct": 2.0232
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 482,
+          "share_pct": 1.6871
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 454,
+          "share_pct": 1.5891
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 401,
+          "share_pct": 1.4036
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 384,
+          "share_pct": 1.3441
+        }
+      ],
+      "compared_with_week": "2023-06-26",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "uml",
+          "label": "UML",
+          "current_postings": 55,
+          "previous_postings": 6,
+          "current_share_pct": 0.1925,
+          "previous_share_pct": 0.1368,
+          "share_delta_percentage_points": 0.0557
+        },
+        {
+          "skill_id": "deep_learning",
+          "label": "Deep Learning",
+          "current_postings": 25,
+          "previous_postings": 2,
+          "current_share_pct": 0.0875,
+          "previous_share_pct": 0.0456,
+          "share_delta_percentage_points": 0.0419
+        },
+        {
+          "skill_id": "postgresql",
+          "label": "PostgreSQL",
+          "current_postings": 17,
+          "previous_postings": 1,
+          "current_share_pct": 0.0595,
+          "previous_share_pct": 0.0228,
+          "share_delta_percentage_points": 0.0367
+        },
+        {
+          "skill_id": "django",
+          "label": "Django",
+          "current_postings": 6,
+          "previous_postings": 0,
+          "current_share_pct": 0.021,
+          "previous_share_pct": 0.0,
+          "share_delta_percentage_points": 0.021
+        },
+        {
+          "skill_id": "tensorflow",
+          "label": "TensorFlow",
+          "current_postings": 6,
+          "previous_postings": 0,
+          "current_share_pct": 0.021,
+          "previous_share_pct": 0.0,
+          "share_delta_percentage_points": 0.021
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 5259,
+          "previous_postings": 881,
+          "current_share_pct": 18.4081,
+          "previous_share_pct": 20.0821,
+          "share_delta_percentage_points": -1.674
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 368,
+          "previous_postings": 119,
+          "current_share_pct": 1.2881,
+          "previous_share_pct": 2.7126,
+          "share_delta_percentage_points": -1.4245
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "current_postings": 578,
+          "previous_postings": 149,
+          "current_share_pct": 2.0232,
+          "previous_share_pct": 3.3964,
+          "share_delta_percentage_points": -1.3732
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "current_postings": 482,
+          "previous_postings": 116,
+          "current_share_pct": 1.6871,
+          "previous_share_pct": 2.6442,
+          "share_delta_percentage_points": -0.957
+        },
+        {
+          "skill_id": "cicd",
+          "label": "CI/CD",
+          "current_postings": 221,
+          "previous_postings": 73,
+          "current_share_pct": 0.7736,
+          "previous_share_pct": 1.664,
+          "share_delta_percentage_points": -0.8904
+        }
+      ]
+    },
+    {
+      "week_start": "2023-07-10",
+      "has_observations": true,
+      "postings": 4102,
+      "skill_assignments": 4040,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 1055,
+          "share_pct": 25.7192
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 788,
+          "share_pct": 19.2101
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 532,
+          "share_pct": 12.9693
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 163,
+          "share_pct": 3.9737
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 128,
+          "share_pct": 3.1204
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 103,
+          "share_pct": 2.511
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 91,
+          "share_pct": 2.2184
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 89,
+          "share_pct": 2.1697
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 87,
+          "share_pct": 2.1209
+        },
+        {
+          "skill_id": "linux",
+          "label": "Linux",
+          "postings": 79,
+          "share_pct": 1.9259
+        }
+      ],
+      "compared_with_week": "2023-07-03",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 1055,
+          "previous_postings": 6925,
+          "current_share_pct": 25.7192,
+          "previous_share_pct": 24.2396,
+          "share_delta_percentage_points": 1.4796
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 532,
+          "previous_postings": 3303,
+          "current_share_pct": 12.9693,
+          "previous_share_pct": 11.5615,
+          "share_delta_percentage_points": 1.4078
+        },
+        {
+          "skill_id": "cicd",
+          "label": "CI/CD",
+          "current_postings": 67,
+          "previous_postings": 221,
+          "current_share_pct": 1.6333,
+          "previous_share_pct": 0.7736,
+          "share_delta_percentage_points": 0.8598
+        },
+        {
+          "skill_id": "git",
+          "label": "Git",
+          "current_postings": 56,
+          "previous_postings": 152,
+          "current_share_pct": 1.3652,
+          "previous_share_pct": 0.532,
+          "share_delta_percentage_points": 0.8331
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 87,
+          "previous_postings": 368,
+          "current_share_pct": 2.1209,
+          "previous_share_pct": 1.2881,
+          "share_delta_percentage_points": 0.8328
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "gcp",
+          "label": "Google Cloud Platform",
+          "current_postings": 7,
+          "previous_postings": 83,
+          "current_share_pct": 0.1706,
+          "previous_share_pct": 0.2905,
+          "share_delta_percentage_points": -0.1199
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 163,
+          "previous_postings": 1167,
+          "current_share_pct": 3.9737,
+          "previous_share_pct": 4.0848,
+          "share_delta_percentage_points": -0.1112
+        },
+        {
+          "skill_id": "deep_learning",
+          "label": "Deep Learning",
+          "current_postings": 0,
+          "previous_postings": 25,
+          "current_share_pct": 0.0,
+          "previous_share_pct": 0.0875,
+          "share_delta_percentage_points": -0.0875
+        },
+        {
+          "skill_id": "dotnet",
+          "label": ".NET",
+          "current_postings": 1,
+          "previous_postings": 25,
+          "current_share_pct": 0.0244,
+          "previous_share_pct": 0.0875,
+          "share_delta_percentage_points": -0.0631
+        },
+        {
+          "skill_id": "databricks",
+          "label": "Databricks",
+          "current_postings": 0,
+          "previous_postings": 10,
+          "current_share_pct": 0.0,
+          "previous_share_pct": 0.035,
+          "share_delta_percentage_points": -0.035
+        }
+      ]
+    },
+    {
+      "week_start": "2023-07-17",
+      "has_observations": true,
+      "postings": 31137,
+      "skill_assignments": 26487,
+      "top_skills": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "postings": 7457,
+          "share_pct": 23.949
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "postings": 5686,
+          "share_pct": 18.2612
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "postings": 3648,
+          "share_pct": 11.716
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "postings": 1273,
+          "share_pct": 4.0884
+        },
+        {
+          "skill_id": "agile",
+          "label": "Agile",
+          "postings": 811,
+          "share_pct": 2.6046
+        },
+        {
+          "skill_id": "sql",
+          "label": "SQL",
+          "postings": 626,
+          "share_pct": 2.0105
+        },
+        {
+          "skill_id": "python",
+          "label": "Python",
+          "postings": 551,
+          "share_pct": 1.7696
+        },
+        {
+          "skill_id": "artificial_intelligence",
+          "label": "Artificial Intelligence",
+          "postings": 536,
+          "share_pct": 1.7214
+        },
+        {
+          "skill_id": "problem_solving",
+          "label": "Problem Solving",
+          "postings": 500,
+          "share_pct": 1.6058
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "postings": 433,
+          "share_pct": 1.3906
+        }
+      ],
+      "compared_with_week": "2023-07-10",
+      "calendar_weeks_since_comparison": 1,
+      "largest_share_increases": [
+        {
+          "skill_id": "azure",
+          "label": "Microsoft Azure",
+          "current_postings": 333,
+          "previous_postings": 39,
+          "current_share_pct": 1.0695,
+          "previous_share_pct": 0.9508,
+          "share_delta_percentage_points": 0.1187
+        },
+        {
+          "skill_id": "analytical_thinking",
+          "label": "Analytical Thinking",
+          "current_postings": 1273,
+          "previous_postings": 163,
+          "current_share_pct": 4.0884,
+          "previous_share_pct": 3.9737,
+          "share_delta_percentage_points": 0.1147
+        },
+        {
+          "skill_id": "gcp",
+          "label": "Google Cloud Platform",
+          "current_postings": 82,
+          "previous_postings": 7,
+          "current_share_pct": 0.2634,
+          "previous_share_pct": 0.1706,
+          "share_delta_percentage_points": 0.0927
+        },
+        {
+          "skill_id": "databricks",
+          "label": "Databricks",
+          "current_postings": 25,
+          "previous_postings": 0,
+          "current_share_pct": 0.0803,
+          "previous_share_pct": 0.0,
+          "share_delta_percentage_points": 0.0803
+        },
+        {
+          "skill_id": "deep_learning",
+          "label": "Deep Learning",
+          "current_postings": 23,
+          "previous_postings": 0,
+          "current_share_pct": 0.0739,
+          "previous_share_pct": 0.0,
+          "share_delta_percentage_points": 0.0739
+        }
+      ],
+      "largest_share_decreases": [
+        {
+          "skill_id": "teamwork",
+          "label": "Teamwork",
+          "current_postings": 7457,
+          "previous_postings": 1055,
+          "current_share_pct": 23.949,
+          "previous_share_pct": 25.7192,
+          "share_delta_percentage_points": -1.7702
+        },
+        {
+          "skill_id": "sap",
+          "label": "SAP",
+          "current_postings": 3648,
+          "previous_postings": 532,
+          "current_share_pct": 11.716,
+          "previous_share_pct": 12.9693,
+          "share_delta_percentage_points": -1.2533
+        },
+        {
+          "skill_id": "communication",
+          "label": "Communication",
+          "current_postings": 5686,
+          "previous_postings": 788,
+          "current_share_pct": 18.2612,
+          "previous_share_pct": 19.2101,
+          "share_delta_percentage_points": -0.9489
+        },
+        {
+          "skill_id": "cicd",
+          "label": "CI/CD",
+          "current_postings": 246,
+          "previous_postings": 67,
+          "current_share_pct": 0.7901,
+          "previous_share_pct": 1.6333,
+          "share_delta_percentage_points": -0.8433
+        },
+        {
+          "skill_id": "java",
+          "label": "Java",
+          "current_postings": 433,
+          "previous_postings": 87,
+          "current_share_pct": 1.3906,
+          "previous_share_pct": 2.1209,
+          "share_delta_percentage_points": -0.7303
+        }
+      ]
+    }
+  ],
+  "unavailable_analyses": {
+    "publication_week_trends": "publication_date has no populated values",
+    "geographic_trends": "federal_state has no populated values",
+    "remote_work_trends": "remote_type has no populated values",
+    "salary_trends": "salary_min and salary_max have no populated values",
+    "job_family_volume": "no validated job-family field is available",
+    "language_requirements": "language_requirements has no populated values"
+  }
+}

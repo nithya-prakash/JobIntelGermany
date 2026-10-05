@@ -1,0 +1,118 @@
+{
+  "phase": 2,
+  "task": "bilingual_rule_based_skill_extraction",
+  "generated_at_utc": "2026-10-05T20:48:03.163922+00:00",
+  "taxonomy_version": "0.2.2",
+  "taxonomy_sha256": "87e8c853c84ce0645cbb56af34eebfc94758579b32e02313f57d6723dd17fe6f",
+  "taxonomy_size": 63,
+  "input": "data/processed/jobs.parquet",
+  "input_sha256": "a0af14d6cc9d97209928b016f32319b018f82949854ce462576e32f1a1248fed",
+  "output": "data/processed/job_skills.parquet",
+  "output_sha256": "bf1f617b85dcd2300abd72c38c2a58f39d1ffb3a4f09943ab4ef4b75b949b5a9",
+  "records_processed": 342058,
+  "records_with_skills": 212218,
+  "skill_assignments": 357681,
+  "unique_skills_observed": 63,
+  "top_skills_by_posting_count": [
+    {
+      "skill_id": "teamwork",
+      "label": "Teamwork",
+      "count": 106901
+    },
+    {
+      "skill_id": "communication",
+      "label": "Communication",
+      "count": 90982
+    },
+    {
+      "skill_id": "sap",
+      "label": "SAP",
+      "count": 38405
+    },
+    {
+      "skill_id": "analytical_thinking",
+      "label": "Analytical Thinking",
+      "count": 22672
+    },
+    {
+      "skill_id": "agile",
+      "label": "Agile",
+      "count": 8998
+    },
+    {
+      "skill_id": "sql",
+      "label": "SQL",
+      "count": 7071
+    },
+    {
+      "skill_id": "python",
+      "label": "Python",
+      "count": 6285
+    },
+    {
+      "skill_id": "problem_solving",
+      "label": "Problem Solving",
+      "count": 6182
+    },
+    {
+      "skill_id": "artificial_intelligence",
+      "label": "Artificial Intelligence",
+      "count": 5261
+    },
+    {
+      "skill_id": "java",
+      "label": "Java",
+      "count": 5118
+    },
+    {
+      "skill_id": "scrum",
+      "label": "Scrum",
+      "count": 4749
+    },
+    {
+      "skill_id": "linux",
+      "label": "Linux",
+      "count": 4748
+    },
+    {
+      "skill_id": "azure",
+      "label": "Microsoft Azure",
+      "count": 3866
+    },
+    {
+      "skill_id": "cpp",
+      "label": "C++",
+      "count": 3654
+    },
+    {
+      "skill_id": "jira",
+      "label": "Jira",
+      "count": 3423
+    },
+    {
+      "skill_id": "cicd",
+      "label": "CI/CD",
+      "count": 2922
+    },
+    {
+      "skill_id": "javascript",
+      "label": "JavaScript",
+      "count": 2814
+    },
+    {
+      "skill_id": "csharp",
+      "label": "C#",
+      "count": 2737
+    },
+    {
+      "skill_id": "git",
+      "label": "Git",
+      "count": 2469
+    },
+    {
+      "skill_id": "html",
+      "label": "HTML",
+      "count": 2421
+    }
+  ]
+}

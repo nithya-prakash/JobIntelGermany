@@ -1,0 +1,341 @@
+{
+  "by_category_all_labelled": {
+    "cloud": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 1,
+      "precision": 1.0,
+      "predicted_count": 1,
+      "recall": 1.0,
+      "true_positive": 1
+    },
+    "database_query_language": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 2,
+      "precision": 1.0,
+      "predicted_count": 2,
+      "recall": 1.0,
+      "true_positive": 2
+    },
+    "devops": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 12,
+      "precision": 1.0,
+      "predicted_count": 12,
+      "recall": 1.0,
+      "true_positive": 12
+    },
+    "enterprise_software": {
+      "f1": 0.9743589743589743,
+      "false_negative": 0,
+      "false_positive": 1,
+      "gold_count": 19,
+      "precision": 0.95,
+      "predicted_count": 20,
+      "recall": 1.0,
+      "true_positive": 19
+    },
+    "framework": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 4,
+      "precision": 1.0,
+      "predicted_count": 4,
+      "recall": 1.0,
+      "true_positive": 4
+    },
+    "machine_learning_ai": {
+      "f1": 0.7999999999999999,
+      "false_negative": 1,
+      "false_positive": 2,
+      "gold_count": 7,
+      "precision": 0.75,
+      "predicted_count": 8,
+      "recall": 0.8571428571428571,
+      "true_positive": 6
+    },
+    "methodology": {
+      "f1": 0.8695652173913044,
+      "false_negative": 3,
+      "false_positive": 0,
+      "gold_count": 13,
+      "precision": 1.0,
+      "predicted_count": 10,
+      "recall": 0.7692307692307693,
+      "true_positive": 10
+    },
+    "programming_language": {
+      "f1": 0.9565217391304348,
+      "false_negative": 1,
+      "false_positive": 0,
+      "gold_count": 12,
+      "precision": 1.0,
+      "predicted_count": 11,
+      "recall": 0.9166666666666666,
+      "true_positive": 11
+    },
+    "runtime": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 1,
+      "precision": 1.0,
+      "predicted_count": 1,
+      "recall": 1.0,
+      "true_positive": 1
+    },
+    "soft_skill": {
+      "f1": 0.7188405797101448,
+      "false_negative": 90,
+      "false_positive": 7,
+      "gold_count": 214,
+      "precision": 0.9465648854961832,
+      "predicted_count": 131,
+      "recall": 0.5794392523364486,
+      "true_positive": 124
+    },
+    "software_architecture": {
+      "f1": 1.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "gold_count": 1,
+      "precision": 1.0,
+      "predicted_count": 1,
+      "recall": 1.0,
+      "true_positive": 1
+    },
+    "web_technology": {
+      "f1": 0.6666666666666666,
+      "false_negative": 0,
+      "false_positive": 1,
+      "gold_count": 1,
+      "precision": 0.5,
+      "predicted_count": 2,
+      "recall": 1.0,
+      "true_positive": 1
+    }
+  },
+  "caveat": "Test split must be scored once per taxonomy version; repeated tuning on it voids it.",
+  "coverage_of_manifest": 1.0,
+  "double_annotated_jobs": 80,
+  "generated_at_utc": "2026-10-05T20:50:02.097045+00:00",
+  "inter_annotator_cohen_kappa": {
+    "llm__nithya": 0.5143646829119863
+  },
+  "labelled_jobs": 180,
+  "manifest_sha256": "4191326c5b08d7f24e1c0faa82be2376db025d08cc3d7be8dcb1c0800b87028d",
+  "phase": 11,
+  "results": {
+    "all": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.7385892116182573,
+          0.8251473477406681
+        ],
+        "precision": [
+          0.9166666666666666,
+          0.9739583333333334
+        ],
+        "recall": [
+          0.6082089552238806,
+          0.7289156626506024
+        ]
+      },
+      "f1": 0.7836734693877552,
+      "false_negative": 95,
+      "false_positive": 11,
+      "gold_count": 287,
+      "jobs": 180,
+      "precision": 0.9458128078817734,
+      "predicted_count": 203,
+      "recall": 0.6689895470383276,
+      "true_positive": 192
+    },
+    "dev": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.728395061728395,
+          0.8695652173913043
+        ],
+        "precision": [
+          0.8888888888888888,
+          0.9861111111111112
+        ],
+        "recall": [
+          0.6,
+          0.808695652173913
+        ]
+      },
+      "f1": 0.8121827411167514,
+      "false_negative": 32,
+      "false_positive": 5,
+      "gold_count": 112,
+      "jobs": 74,
+      "precision": 0.9411764705882353,
+      "predicted_count": 85,
+      "recall": 0.7142857142857143,
+      "true_positive": 80
+    },
+    "stratum:ambiguous_token": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.6749999999999999,
+          0.8205128205128205
+        ],
+        "precision": [
+          0.875,
+          0.9902912621359223
+        ],
+        "recall": [
+          0.5333333333333333,
+          0.7232142857142857
+        ]
+      },
+      "f1": 0.7558139534883722,
+      "false_negative": 38,
+      "false_positive": 4,
+      "gold_count": 103,
+      "jobs": 60,
+      "precision": 0.9420289855072463,
+      "predicted_count": 69,
+      "recall": 0.6310679611650486,
+      "true_positive": 65
+    },
+    "stratum:de_sidecar_empty": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.19999999999999998,
+          0.6086956521739131
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.1111111111111111,
+          0.4375
+        ]
+      },
+      "f1": 0.41379310344827586,
+      "false_negative": 17,
+      "false_positive": 0,
+      "gold_count": 23,
+      "jobs": 30,
+      "precision": 1.0,
+      "predicted_count": 6,
+      "recall": 0.2608695652173913,
+      "true_positive": 6
+    },
+    "stratum:de_sidecar_hit": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.7764705882352941,
+          0.896551724137931
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.6346153846153846,
+          0.8125
+        ]
+      },
+      "f1": 0.8351648351648352,
+      "false_negative": 15,
+      "false_positive": 0,
+      "gold_count": 53,
+      "jobs": 30,
+      "precision": 1.0,
+      "predicted_count": 38,
+      "recall": 0.7169811320754716,
+      "true_positive": 38
+    },
+    "stratum:en_sidecar_empty": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.0,
+          0.6666666666666667
+        ],
+        "precision": [
+          0.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          0.6
+        ]
+      },
+      "f1": 0.4,
+      "false_negative": 10,
+      "false_positive": 2,
+      "gold_count": 14,
+      "jobs": 30,
+      "precision": 0.6666666666666666,
+      "predicted_count": 6,
+      "recall": 0.2857142857142857,
+      "true_positive": 4
+    },
+    "stratum:en_sidecar_hit": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.8295454545454545,
+          0.9313725490196078
+        ],
+        "precision": [
+          0.8936170212765957,
+          0.9789473684210527
+        ],
+        "recall": [
+          0.759493670886076,
+          0.9107142857142857
+        ]
+      },
+      "f1": 0.8876404494382023,
+      "false_negative": 15,
+      "false_positive": 5,
+      "gold_count": 94,
+      "jobs": 30,
+      "precision": 0.9404761904761905,
+      "predicted_count": 84,
+      "recall": 0.8404255319148937,
+      "true_positive": 79
+    },
+    "test": {
+      "bootstrap_95ci": {
+        "f1": [
+          0.7038327526132404,
+          0.8154761904761905
+        ],
+        "precision": [
+          0.9065420560747663,
+          0.984375
+        ],
+        "recall": [
+          0.5647668393782384,
+          0.7095238095238096
+        ]
+      },
+      "f1": 0.764505119453925,
+      "false_negative": 63,
+      "false_positive": 6,
+      "gold_count": 175,
+      "jobs": 106,
+      "precision": 0.9491525423728814,
+      "predicted_count": 118,
+      "recall": 0.64,
+      "true_positive": 112
+    }
+  },
+  "sample_size": 180,
+  "seed": 20261004,
+  "status": "multi_annotator_reviewed",
+  "task": "skill_extraction_benchmark_v2",
+  "taxonomy_sha256": "87e8c853c84ce0645cbb56af34eebfc94758579b32e02313f57d6723dd17fe6f"
+}

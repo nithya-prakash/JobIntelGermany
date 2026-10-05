@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.14"
+      - run: uv sync --no-editable --extra dev
+      - run: .venv/bin/python scripts/check_release.py
+      - run: .venv/bin/ruff check .
+      - run: .venv/bin/mypy src scripts
+      - run: .venv/bin/python -m pytest -q

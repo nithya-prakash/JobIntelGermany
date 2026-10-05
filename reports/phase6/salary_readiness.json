@@ -1,0 +1,104 @@
+{
+  "phase": 6,
+  "audit_type": "job_level_salary_label_readiness",
+  "generated_at_utc": "2026-10-04T18:45:32.419972+00:00",
+  "inputs": {
+    "jobs_path": "jobs.parquet",
+    "jobs_sha256": "a0af14d6cc9d97209928b016f32319b018f82949854ce462576e32f1a1248fed"
+  },
+  "accepted_units": {
+    "currencies": [
+      "EUR"
+    ],
+    "periods": [
+      "annual",
+      "annum",
+      "month",
+      "monthly",
+      "per month",
+      "per year",
+      "year",
+      "yearly"
+    ],
+    "target_policy": "bounds only; no midpoint label is inferred"
+  },
+  "summary": {
+    "postings": 342058,
+    "rows_with_salary_any": 0,
+    "complete_interval_rows": 0,
+    "partial_interval_rows": 0,
+    "invalid_numeric_interval_rows": 0,
+    "unsupported_unit_rows": 0,
+    "valid_eur_period_interval_rows": 0
+  },
+  "field_coverage": {
+    "salary_min": {
+      "count": 0,
+      "total": 342058
+    },
+    "salary_max": {
+      "count": 0,
+      "total": 342058
+    },
+    "salary_currency": {
+      "count": 0,
+      "total": 342058
+    },
+    "salary_period": {
+      "count": 0,
+      "total": 342058
+    },
+    "title": {
+      "count": 342058,
+      "total": 342058
+    },
+    "location": {
+      "count": 339422,
+      "total": 342058
+    },
+    "federal_state": {
+      "count": 0,
+      "total": 342058
+    },
+    "experience_level": {
+      "count": 0,
+      "total": 342058
+    },
+    "employment_type": {
+      "count": 0,
+      "total": 342058
+    },
+    "remote_type": {
+      "count": 0,
+      "total": 342058
+    },
+    "normalized_skills": {
+      "count": 0,
+      "total": 342058
+    }
+  },
+  "skill_sidecar": {
+    "available": true,
+    "path": "job_skills.parquet",
+    "sha256": "05a9716ce969dbd759cfc6a608fc1b7965d42e651295b8b25970da2960b7c1b0",
+    "rows": 342058,
+    "postings_with_skills": 179607,
+    "skill_assignments": 295664,
+    "matched_postings_with_skills": 179607,
+    "unmatched_postings_with_skills": 0
+  },
+  "model": {
+    "trained": false,
+    "metrics": null,
+    "shap_available": false,
+    "training_blockers": [
+      "no valid job-level salary intervals are available"
+    ],
+    "reason": "This phase audits label readiness only; it does not train a model."
+  },
+  "alternative_source_assessment": {
+    "source": "German Federal Employment Agency Entgeltatlas",
+    "compatible_as_job_level_training_labels": false,
+    "reason": "It provides aggregate occupation/region employment medians, not advertised salary labels linked to these postings; a validated KldB mapping and a changed target definition would be required."
+  }
+}

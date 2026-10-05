@@ -1,0 +1,160 @@
+{
+  "phase": 10,
+  "assessment": "preliminary_responsible_ai_and_eu_ai_act_risk_review",
+  "reviewed_on": "2026-10-04",
+  "system_scope": "Local candidate-side skills-only search CLI; not an employer applicant-ranking workflow.",
+  "legal_status": "Engineering assessment only; not legal advice, compliance evidence, or a conformity assessment.",
+  "ratings_note": "Qualitative prioritization only. No quantitative fairness, probability, or impact metrics were measured.",
+  "risks": [
+    {
+      "id": "R01",
+      "risk_level": "high",
+      "requirement": "Keep intended purpose explicit and reassess employment-use classification before changing to employer screening.",
+      "system_behavior": "The current local CLI ranks postings for a candidate-side search based on skill overlap. It is not an employer-facing applicant filter or evaluator.",
+      "evidence": [
+        "src/german_job_market/matching_cli.py:33-45",
+        "src/german_job_market/matching.py:218-223"
+      ],
+      "gap": "No formal intended-purpose statement, classification memo, provider/deployer role assessment, or release gate for employer use exists.",
+      "risk": "Purpose creep could place a changed system in an employment/recruitment use category, while the current evidence and controls are insufficient for that setting.",
+      "mitigation": "Keep the candidate-side boundary visible. Before employer-side use, document the intended purpose and actors, assess the consolidated AI Act including Annex III point 4 and Article 6, and obtain qualified legal review. Do not treat this document as a classification decision."
+    },
+    {
+      "id": "R02",
+      "risk_level": "high",
+      "requirement": "Assess disparate impact and proxy risks before using ranking outputs in employment-related decisions.",
+      "system_behavior": "The current score uses exact overlap with a finite skills taxonomy; no group attributes or candidate benchmark are present.",
+      "evidence": [
+        "src/german_job_market/matching.py:49-54,218-245",
+        "data/evaluation/matching/README.md:1-13",
+        "src/german_job_market/schema.py:14-37"
+      ],
+      "gap": "No fairness metrics, proxy analysis, representative candidate data, or human impact study has been run. Absence of explicit demographic columns does not test for proxy effects.",
+      "risk": "Taxonomy coverage and phrase extraction may favor particular occupations, language proficiency, CV-writing styles, or career histories and produce unequal exposure to jobs.",
+      "mitigation": "Do not use scores for employment decisions. If use changes, design a lawful, privacy-preserving, representative evaluation with independent review, analyze relevant group harms, document limitations, and define mitigations and stop criteria before release."
+    },
+    {
+      "id": "R03",
+      "risk_level": "high",
+      "requirement": "Make explanations faithful, bounded, and correctable by the affected user.",
+      "system_behavior": "The matcher reports overlap components and not_found_in_candidate_profile inferred from skill IDs absent in extracted posting text. It notes that source text combines requirements and responsibilities.",
+      "evidence": [
+        "src/german_job_market/matching.py:167-191,218-245"
+      ],
+      "gap": "No evidence spans, distinction between explicit requirements and incidental mentions, or correction/appeal workflow is implemented.",
+      "risk": "A user may mistake 'not found in text' for an objectively verified skill deficiency or treat the overlap score as overall suitability.",
+      "mitigation": "Label gaps as 'not found in this posting text'; surface source spans and extraction confidence in a future version; retain the score interpretation; provide a way to correct profile and extraction errors."
+    },
+    {
+      "id": "R04",
+      "risk_level": "high",
+      "requirement": "Minimize and protect candidate personal data; define purpose, access, retention, deletion, and processing roles before storage or hosting.",
+      "system_behavior": "A CV path is read by a local CLI, extracted in memory, and not written into its JSON result. There is no hosted CV upload feature in this repository.",
+      "evidence": [
+        "src/german_job_market/matching_cli.py:37-45,58-84"
+      ],
+      "gap": "No authentication, access controls, retention/deletion workflow, deployed-service boundary, incident plan, or controller/processor assessment exists. In-memory processing is not a complete privacy guarantee.",
+      "risk": "Future logging, backups, shared machines, or service deployment could expose CV data or retain it longer than intended; CVs may contain sensitive personal information.",
+      "mitigation": "Keep CVs local for the current feature. Before hosting/storing CVs, complete a privacy and security review, define lawful basis and roles with counsel, minimize fields, avoid raw-CV logs, implement access controls and deletion/retention rules, and assess whether a DPIA is required."
+    },
+    {
+      "id": "R05",
+      "risk_level": "high",
+      "requirement": "Use data appropriate to the stated purpose and disclose data coverage and limitations.",
+      "system_behavior": "Matching relies on a finite Phase 2 taxonomy and a historical single-source AI-skills job-ad corpus; the source combines advertisement sections.",
+      "evidence": [
+        "README.md:1-6, phase 2 and phase 5 sections",
+        "reports/phase1/quality.json",
+        "src/german_job_market/matching.py:237-245"
+      ],
+      "gap": "The data are not a current representative sample of all German jobs, and no representative candidate-to-job relevance judgments are available.",
+      "risk": "Missing or stale fields and source-specific coverage can make rankings incomplete or misleading and may disproportionately fail outside the observed source/population.",
+      "mitigation": "Restrict claims to this source snapshot. Obtain rights-cleared, broader, time-aware data and independently judged candidate/job queries before making current-market or generalized suitability claims."
+    },
+    {
+      "id": "R06",
+      "risk_level": "high",
+      "requirement": "Provide meaningful human oversight, correction, and contestability before consequential employment use.",
+      "system_behavior": "The CLI prints a ranked list and contains no reviewer workflow or decision integration.",
+      "evidence": [
+        "src/german_job_market/matching_cli.py:67-84",
+        "src/german_job_market/matching.py:218-246"
+      ],
+      "gap": "No designated reviewer, override process, complaint/appeal route, or explanation to affected third parties exists.",
+      "risk": "If integrated into a hiring funnel, people may be screened out without a meaningful person reviewing the evidence or correcting an error.",
+      "mitigation": "Do not integrate into screening. For any future consequential use, assign trained reviewers with authority to override/pause, document review criteria, notify affected people as appropriate, and provide correction and contest routes."
+    },
+    {
+      "id": "R07",
+      "risk_level": "medium",
+      "requirement": "Maintain traceability, monitoring, incident response, and rollback controls appropriate to deployment.",
+      "system_behavior": "There is no serving model or deployed endpoint; the current program is a local CLI and no operational monitoring is present.",
+      "evidence": [
+        "reports/phase8/llm_readiness.json",
+        "reports/phase9/serving_readiness.json",
+        "src/german_job_market/matching_cli.py:33-88"
+      ],
+      "gap": "No production owner, versioned decision audit trail, drift monitoring, incident process, or rollback path has been implemented.",
+      "risk": "After a deployment, silent data, taxonomy, or behavior changes could degrade results or create unobserved harms.",
+      "mitigation": "Before deployment, assign owners, version data/taxonomy/code, log only necessary decision metadata (not raw CVs), define monitoring and incident thresholds, and test a pause/rollback procedure."
+    },
+    {
+      "id": "R08",
+      "risk_level": "medium",
+      "requirement": "Assess applicable transparency duties when an AI interface or generated content is introduced.",
+      "system_behavior": "No LLM is currently fine-tuned or served; output is deterministic JSON from a local CLI.",
+      "evidence": [
+        "reports/phase8/llm_readiness.json",
+        "reports/phase9/serving_readiness.json",
+        "src/german_job_market/matching_cli.py:84"
+      ],
+      "gap": "There is no interactive AI disclosure or generated-content marking analysis for a future UI or model-generated explanation.",
+      "risk": "A future interface could omit disclosures that apply to the actual AI interaction or generated output.",
+      "mitigation": "Before adding an interactive or generative feature, review AI Act Article 50 and applicable guidance for that specific system and output, implement required disclosures/marking, and re-review when the interface changes."
+    },
+    {
+      "id": "R09",
+      "risk_level": "high",
+      "requirement": "Assess GDPR rules for profiling and solely automated decisions with legal or similarly significant effects if the system's purpose changes.",
+      "system_behavior": "The tool supports candidate-side job search and does not make an employer hiring decision.",
+      "evidence": [
+        "src/german_job_market/matching_cli.py:33-45",
+        "src/german_job_market/matching.py:218-223"
+      ],
+      "gap": "No GDPR lawful-basis analysis, Article 22 analysis, controller/processor allocation, or data subject rights workflow exists.",
+      "risk": "A future employer-facing workflow could use rankings as a solely automated or materially consequential decision without required safeguards.",
+      "mitigation": "Obtain a context-specific data-protection review before employer integration. Document meaningful human involvement, purpose, legal basis, safeguards, and applicable rights; do not assume a nominal click makes review meaningful."
+    },
+    {
+      "id": "R10",
+      "risk_level": "high",
+      "requirement": "Apply the AI Act requirements that actually correspond to the system's classification, role, and use; perform a FRIA only where Article 27 conditions apply.",
+      "system_behavior": "This repository is a prototype and makes no AI Act classification or conformity claim.",
+      "evidence": [
+        "docs/responsible_ai.md: Legal and organizational interpretation",
+        "Official consolidated AI Act: Articles 6 and 27; Annex III point 4"
+      ],
+      "gap": "No classification, provider/deployer mapping, conformity assessment, or FRIA applicability decision has been made. Article 27 does not apply universally to every private recruiter; scope depends on specified deployer/use categories.",
+      "risk": "Misreading applicability or transition dates could leave a changed system without required governance or lead to an unsupported compliance claim.",
+      "mitigation": "Reassess the consolidated Regulation and official guidance at each material scope change. As reviewed on 2026-10-04, Commission sources state Annex III high-risk rules apply from 2027-12-02; this transition does not itself establish current compliance or exempt other applicable duties."
+    },
+    {
+      "id": "R11",
+      "risk_level": "medium",
+      "requirement": "Do not expose unsupported salary predictions or explanations as individualized facts.",
+      "system_behavior": "No salary predictor exists because the audited corpus has no salary target labels.",
+      "evidence": [
+        "reports/phase6/salary_readiness.json"
+      ],
+      "gap": "No salary model, evaluation set, model explanation, or uncertainty estimate exists.",
+      "risk": "A future salary estimate could anchor decisions or reproduce geographic and occupational coverage bias if presented without validated labels and uncertainty.",
+      "mitigation": "Do not present a salary estimate in the current system. Before training, secure defensible target data and units, evaluate error by relevant slices, report uncertainty and coverage, and explain that estimates are not guaranteed pay."
+    }
+  ],
+  "official_sources": [
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+    "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+    "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
+  ]
+}

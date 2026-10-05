@@ -1,0 +1,75 @@
+{
+  "caveat": "Recall is relative to pooled, judged jobs only. Queries are split by candidate; score the test split once.",
+  "generated_at_utc": "2026-10-05T20:32:09.544856+00:00",
+  "k": 10,
+  "minimum_queries": 20,
+  "phase": 11,
+  "queries_fully_judged": 30,
+  "queries_total": 30,
+  "relevant_grade_for_binary_metrics": 2,
+  "status": "scored",
+  "systems": {
+    "matcher": {
+      "mrr": {
+        "bootstrap_95ci": [
+          0.9,
+          1.0
+        ],
+        "mean": 0.95
+      },
+      "ndcg_at_k": {
+        "bootstrap_95ci": [
+          0.8765153960725774,
+          0.939177971705216
+        ],
+        "mean": 0.9067317321604512
+      },
+      "precision_at_k": {
+        "bootstrap_95ci": [
+          0.7966666666666666,
+          0.9066666666666666
+        ],
+        "mean": 0.8533333333333334
+      },
+      "recall_at_k_pooled": {
+        "bootstrap_95ci": [
+          0.8284917859917861,
+          0.906009916009916
+        ],
+        "mean": 0.8666617641617641
+      }
+    },
+    "random": {
+      "mrr": {
+        "bootstrap_95ci": [
+          0.20638888888888887,
+          0.4241137566137566
+        ],
+        "mean": 0.3083201058201058
+      },
+      "ndcg_at_k": {
+        "bootstrap_95ci": [
+          0.09494765793325953,
+          0.1874914412297429
+        ],
+        "mean": 0.1385721017945774
+      },
+      "precision_at_k": {
+        "bootstrap_95ci": [
+          0.09666666666666666,
+          0.19
+        ],
+        "mean": 0.14333333333333334
+      },
+      "recall_at_k_pooled": {
+        "bootstrap_95ci": [
+          0.09399008399008399,
+          0.171508214008214
+        ],
+        "mean": 0.13333823583823584
+      }
+    }
+  },
+  "target_queries": "30-50",
+  "task": "matching_benchmark"
+}
