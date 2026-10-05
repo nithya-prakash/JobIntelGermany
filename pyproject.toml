@@ -34,6 +34,7 @@ gjmi-translate = "german_job_market.translation_cli:main"
 gjmi-llm = "german_job_market.llm_readiness_cli:main"
 gjmi-serve = "german_job_market.serving_readiness_cli:main"
 gjmi-eval = "german_job_market.benchmark_cli:main"
+gjmi-demo = "german_job_market.demo:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/german_job_market"]
