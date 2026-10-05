@@ -6,6 +6,10 @@
 
 A reproducible, privacy-conscious research pipeline over 342,058 German job ads: it normalizes a published snapshot, extracts skills with an explainable bilingual (German/English) lexicon, reports historical skill trends, and ranks postings against a skill profile. It also includes honest readiness audits for the parts that cannot be built yet. This is a local research prototype, not a production platform.
 
+![Matcher demo with a Python/SQL/Docker profile](docs/img/demo.png)
+
+*Local demo. Posting titles, employers and locations are replaced with placeholders in this screenshot because the ad text's redistribution rights are unreviewed; the real page shows them.*
+
 ## Headline results
 
 | What | Result | Read with |
