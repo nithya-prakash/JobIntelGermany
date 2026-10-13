@@ -30,6 +30,7 @@ uv sync --no-editable --extra dev
 .venv/bin/gjmi                                   # normalize -> Parquet + DuckDB
 .venv/bin/gjmi-skills extract                    # skill sidecar
 .venv/bin/gjmi-demo                              # open http://127.0.0.1:8765
+.venv/bin/python -m german_job_market.bi_export  # optional: star-schema Parquet for Power BI
 ```
 
 With `--no-editable`, code changes need `uv sync --no-editable --extra dev --reinstall-package german-job-market-intelligence`.
@@ -48,6 +49,7 @@ Mendeley Data dataset [10.17632/wnt24rfrwz.2](https://doi.org/10.17632/wnt24rfrw
 | Skill co-occurrence vectors | Exploratory; clusters unstable |
 | Candidate/job matching and skill gaps | Implemented, pilot-benchmarked |
 | Local web demo (`gjmi-demo`) | Implemented, local only |
+| Power BI export (`python -m german_job_market.bi_export`) | Implemented, derived non-text fields only; see [`docs/powerbi.md`](docs/powerbi.md) |
 | Evaluation tooling (`gjmi-eval`) | Implemented |
 | Salary, translation, LLM fine-tuning, serving | Readiness audits only; blocked by missing labels or models |
 | Responsible AI / EU AI Act risk assessment | Preliminary documentation |
